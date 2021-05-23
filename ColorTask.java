@@ -6,21 +6,21 @@ class ColorCode{
 		String c1;
 		String c2;
 		String c3;
-		String color="black";
+		String color="BLACK";
 
 		System.out.println("  :  (RED,GREEN,BLUE,NO) : ");
-		System.out.println("Enter color 1 : ");
+		System.out.print("Enter color 1 : ");
 		c1 = sc.nextLine();
 
-		System.out.println("Enter color 2 : ");
+		System.out.print("Enter color 2 : ");
 		c2 = sc.nextLine();
 		
-		System.out.println("Enter color 3 : ");
+		System.out.print("Enter color 3 : ");
 		c3 = sc.nextLine();
 			
-		String x1="";
-		String x2="";
-		String x3="";
+		String x1=""; //red
+		String x2=""; //green
+		String x3=""; //blue
 
 		if(c1.equalsIgnoreCase("RED") || c2.equalsIgnoreCase("RED") || c3.equalsIgnoreCase("RED"))
 				x1="RED";
@@ -33,17 +33,44 @@ class ColorCode{
 		System.out.println("x2 : "+x2);
 		System.out.println("x3 : "+x3);
 
-		if(x1.equalsIgnoreCase(""))
-		{
-			 if(x2.equalsIgnoreCase("GREEN") && x3.equalsIgnoreCase("BLUE"))
-			 	color = "light BLUE";
-			 if (x2.equalsIgnoreCase(""))
-			 	color = "BLUE";
-			 if (x3.equalsIgnoreCase("")) {
-			 	color ="GREEN";
-			 }
-		}
+		if(!(x1.equalsIgnoreCase("") && x2.equalsIgnoreCase("") && x3.equalsIgnoreCase("")))
+		{			
+			if(x1.equalsIgnoreCase(""))
+			{
+				 if(x2.equalsIgnoreCase("GREEN") && x3.equalsIgnoreCase("BLUE"))
+			 		color = "light BLUE";
+			 	if (x2.equalsIgnoreCase(""))
+			 		color = "BLUE";
+			 	if (x3.equalsIgnoreCase("")) {
+			 		color ="GREEN";
+			 	}
+			}
 
+			if(x2.equalsIgnoreCase(""))
+			{
+				 if(x1.equalsIgnoreCase("RED") && x3.equalsIgnoreCase("BLUE"))
+			 		color = "PINK";
+			 	 if (x1.equalsIgnoreCase(""))
+			 		color = "blue";
+			 	 if (x3.equalsIgnoreCase("")) {
+			 		color ="RED";
+			 	}
+			}
+
+			if(x3.equalsIgnoreCase(""))
+			{
+				 if(x1.equalsIgnoreCase("RED") && x2.equalsIgnoreCase("GREEN"))
+			 		color = "YELLOW";
+			 	if (x1.equalsIgnoreCase(""))
+			 		color = "GREEN";
+			 	if (x2.equalsIgnoreCase("")) {
+			 		color ="RED";
+				 }
+			}
+			if(x1.equalsIgnoreCase("RED") && x2.equalsIgnoreCase("GREEN") && x3.equalsIgnoreCase("BLUE"))
+			color="WHITE";
+		}
+		
 		System.out.println("new color : "+color);
 	}
 }
