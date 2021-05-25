@@ -1,18 +1,23 @@
-class Recursion
-{
+
+class Recusion{
 	public static void main(String[] args) {
 		
-		Data d = Data();
+		int x = Code.say(10);
 
-		d.Data();
+		System.out.println("o/p : "+x);
 	}
 }
-class Data{
-
-	void show()
+class Code{
+	static int say(int n)
 	{
+		if(n==0)
+			return 'A';
+		System.out.println("Hello World..... "+n);
+	
+		int x = say(n-2);
 
-		System.out.println("hello world...");
-		show();
+		System.out.println("\tHello World..... "+n+"\t"+x);
+
+	return 0;
 	}
 }
