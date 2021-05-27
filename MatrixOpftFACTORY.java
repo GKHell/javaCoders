@@ -11,8 +11,6 @@ class Main
 			Matrix C = A.sum(B); // this ?
 			C.print();
 		 
-
-
 	}
 }
 class Matrix{
