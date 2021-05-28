@@ -1,8 +1,9 @@
 import java.util.*;
+import java.io.*;
 class InnerClassCode
 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)throws IOException {
 		Person p = new Person("RohitCodes"); 
 		p.register();
 		p.logInFb();
@@ -27,13 +28,12 @@ class Person{
 
 		System.out.print("Enter password  : ");
 		l.uP = sc.nextLine();
-			
 	}
-	void logInFb()
+	void logInFb() throws IOException
 	{
 		String username;
 		String password;
-		System.getRuntime("ls");
+		Runtime.getRuntime().exec("clear");
 		System.out.print("Enter username for login : ");
 		username = sc.nextLine();
 

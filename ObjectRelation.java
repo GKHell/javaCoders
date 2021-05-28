@@ -11,6 +11,8 @@ class ObjectRelation{
 		a.print();
 	}
 }
+
+B['msg'] -> A
 class A{
 
 	int x;
