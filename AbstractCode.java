@@ -10,7 +10,7 @@ class AbstractCode{
 
 abstract class A{
 
-
+	int i;
 	abstract void say(int x); //abstract method
 
 	void display() //concrete method
