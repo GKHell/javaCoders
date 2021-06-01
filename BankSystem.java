@@ -21,7 +21,7 @@ class BankSystem{
 abstract class Bank{
 
 	double ammount;
-	abstract void updateBalance(double m);
+	abstract void updateBalance(double m,int i);
 }
 class Person extends Bank{
 
