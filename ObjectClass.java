@@ -1,19 +1,49 @@
 
 class ObjectClass{
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		
 		System.out.println("status 1 : "+Cal.cmp("we","we"));
 
-		System.out.println("toString : "+Cal.toString());
+		Cal c1 = new Cal();
+		Cal c2 = c1;
+
+
+
+		System.out.println("toString : "+c1.toString());
+
+		System.out.println("  equals : "+c1.equals(c2));
+
+		System.out.println("  class  : "+c1.getClass());
+		System.out.println("  hashcode: "+c1.hashCode());
+
+
+		Cal c3 = (Cal)c1.clone();
+
+		c1.finalize();
 
 	}
 }
 
-class Cal{
+class Cal implements Cloneable{
 
 
 	 static boolean cmp(Object a,Object b)
 	{
 		return a==b;
 	}
+
+	protected Object clone() throws CloneNotSupportedException
+	{
+		return super.clone();
+	}
+
+	protected void finalize()
+	{
+
+	}
+
+	// public String toString()
+	// {
+	// 	return  super.toString()+" HELL";
+	// }
 }
