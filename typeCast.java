@@ -28,7 +28,7 @@ class typeCast{
 		b.say2();
 
 		//////////////////////////
-		A objA = new B();// child to super
+		A objA = new B();// child to super // generalization
 		objA.say1();
 
 	}
