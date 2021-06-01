@@ -1,6 +1,6 @@
 
 class ObjectClass{
-	public static void main(String[] args) throws CloneNotSupportedException {
+	public static void main(String[] args) throws CloneNotSupportedException,Throwable{
 		
 		System.out.println("status 1 : "+Cal.cmp("we","we"));
 
@@ -15,7 +15,6 @@ class ObjectClass{
 
 		System.out.println("  class  : "+c1.getClass());
 		System.out.println("  hashcode: "+c1.hashCode());
-
 
 		Cal c3 = (Cal)c1.clone();
 
@@ -37,9 +36,9 @@ class Cal implements Cloneable{
 		return super.clone();
 	}
 
-	protected void finalize()
+	protected void finalize() throws Throwable
 	{
-
+		 super.finalize();
 	}
 
 	// public String toString()
