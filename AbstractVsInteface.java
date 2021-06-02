@@ -11,6 +11,10 @@ abstract class A{ //could have concrete and abstract method  or both..
 
 	int i = 21;
 	abstract void show();
+	void tell()
+	{
+		
+	}
 }
 interface B{ // could have only abstract method...
 
