@@ -2,16 +2,22 @@
 class InterfaceCode{ 
 	public static void main(String[] args) {
 	
-		Code c = new Code();	
+		Code c = new Code();
+		c.display();	
 	}
 
 }
 interface Rules{
 
-	void display(); //abstract method...
+		public void display(); //abstract method...
 
 }
-class Code{
+class Code implements Rules{
 
 
+	public void display()
+	{
+
+		System.out.println("Hello World....");
+	}
 }
