@@ -13,7 +13,7 @@ abstract class A{ //could have concrete and abstract method  or both..
 	abstract void show();
 	void tell()
 	{
-		
+
 	}
 }
 interface B{ // could have only abstract method...
@@ -21,6 +21,7 @@ interface B{ // could have only abstract method...
 	int j = 2;
 	public void display();
 }
+/////////
 class C extends A  implements B{
 
 	void show()

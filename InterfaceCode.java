@@ -9,7 +9,7 @@ class InterfaceCode{
 }
 interface Rules{
 
-		public void display() //abstract method...
+		public void display(); //abstract method...
 
 }
 class Code implements Rules{
