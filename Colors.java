@@ -2,7 +2,6 @@
 package myColors;
 public class Colors{
 
-
 	public static void printRED(String str)
 	{
 		System.out.println("\u001B[31m"+str+"\u001B[0m");

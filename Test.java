@@ -6,7 +6,6 @@ class Test{
 		
 		Colors.printRED("HELLO WORLD..");
 		Colors.printBLUE("COde is for Coders..");
-
 		System.out.println("1234567890");
 	}
 }
