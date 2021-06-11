@@ -11,7 +11,6 @@ class ThrowVsThrows
 		String name = br.readLine();
 		
 		String userName = "MannuCode";
-
 		try{
 			if(!userName.equalsIgnoreCase(name))
 			{
