@@ -66,15 +66,48 @@ class WrapperClassCode{
 		System.out.println(i+" in bin : "+Integer.toBinaryString(i));
 
 
-		/*
-			hex = int ?
-			 256 16 1
-			 	  1	3
-			 	 ----
-			 	 16+3 = 19
+		// /*
+		// 	hex = int ?
+		// 	 256 16 1
+		// 	 	  1	3
+		// 	 	 ----
+		// 	 	 16+3 = 19
 
-		*/
+		// */
 
+
+		Long l = Long.parseLong("120931");
+
+		System.out.println("Long : "+l.toString());
+
+		Long l1 =Long.parseLong("120931");
+		Long l2 =Long.parseLong("120935");
+
+		System.out.println(" compareTo() : "+(l1.compareTo(l2)));
+		System.out.println("    equals() : "+(l1.equals(l2)));
+		// String s;
+		// s = l.toString();   // datatype -> String
+		s = l+"";
+		System.out.println("toString : "+s);
+
+
+		l = Long.valueOf(s); // String -> datatype
+		System.out.println("valueOf : "+l);
+
+		Float f = Float.parseFloat("2323.34");
+		// f = 121.34f; //way1
+		f = (float)121.34;
+		System.out.println("float : "+f);
+			 	 
+		 //////////////// : boolean 
+
+		Boolean bool = Boolean.parseBoolean("sdjfkbj");
+		System.out.println("Boolean : "+bool); 		
+
+		Boolean b1 = Boolean.parseBoolean("true");
+		Boolean b2 = Boolean.parseBoolean("false");
+
+		System.out.println("Status : "+b1+b2);
 
 
 
