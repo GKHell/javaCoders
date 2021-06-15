@@ -1,6 +1,7 @@
 
 import java.io.*;
-import java.util.*;
+import java.util.*;	
+import java.lang.*;
 class ObjectArray{
 	public static void main(String[] args) throws Exception {
 	
