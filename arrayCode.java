@@ -17,7 +17,7 @@ class Code{
 		}
 
 		System.out.println("\n-----------------------\n");
-		// x = a;
+		// x = a[i];
 		for(int x:a) //for-each
 		{
 			System.out.println("==> : "+x);
