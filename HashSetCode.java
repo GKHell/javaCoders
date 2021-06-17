@@ -1,9 +1,9 @@
 
 import java.util.*;
-class HashSetCode{
+class LinkedHashSetCode{
 	public static void main(String[] args) {
 		
-		HashSet<String> list = new HashSet<String>();
+		LinkedHashSet<String> list = new LinkedHashSet<String>();
 
 		Scanner sc = new Scanner(System.in);
 		// list.add("python 1");
