@@ -37,7 +37,6 @@ class HashSetCode{
 			s = sc.nextLine();
 			System.out.println("finding "+s+" in list : "+list.contains(s));
 
-
 		/////
 		// Iterator i;
 		// i = list.iterator();
