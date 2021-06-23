@@ -30,15 +30,12 @@ class Code{
 			int r = revCode(reverse);
 			space(j);
 			System.out.println(r+""+reverse);
-
 			reverse /= 10;
-
 			if(reverse<=0)
 			{
 				space(j);
 				System.out.println(r);
 			}
-
 			j++;
 		}
 	}
