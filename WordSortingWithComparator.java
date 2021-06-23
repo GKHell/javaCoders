@@ -36,7 +36,7 @@ class Ascending implements Comparator<String>{
 
 	public int compare(String i1,String i2)
 	{
-		return i1.compareTo(i2);
+		return i1.compareTo(i2); // swap both i1,i2 for descending
 		// return -1;
 		/*
 				 i1==i2 returns 0
