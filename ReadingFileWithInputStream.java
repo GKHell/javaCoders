@@ -2,23 +2,21 @@
 import java.io.*;
 class Hell{
 	public static void main(String[] args)throws Exception {
+		
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
 		DataInputStream ds = new DataInputStream(System.in);
 
-		System.out.print("Enter the file name : ");
+		System.out.print("Enter file Name : ");
 		String fileName = br.readLine();
-		FileOutputStream file = new FileOutputStream(fileName);
 
-		BufferedOutputStream bout = new BufferedOutputStream(file,1024);
+		FileInputStream file = new FileInputStream(fileName);
 
-		for(char i=65;i<91;i++)
-		{	
-
-			bout.write(i);
+		int ch;
+		while((ch=file.read())!=-1)
+		{
+			System.out.print((char)ch);
 		}
 
-		bout.close();
 	}
 }
