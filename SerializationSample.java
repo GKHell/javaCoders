@@ -1,5 +1,6 @@
 
 import java.io.*;
+import java.util.*;
 class SerializationSample
 {
 	public static void main(String[] args)throws Exception {
@@ -13,7 +14,7 @@ class SerializationSample
 
 		/////
 				FileOutputStream file = new FileOutputStream("StudentObject.txt");
-				ObjectOutputStream ankita = ObjectOutputStream(file);
+				ObjectOutputStream ankita = new ObjectOutputStream(file);
 		/////
 		System.out.print("Enter the data : \n");
 		for(int i=0;i<n;i++)
