@@ -13,16 +13,22 @@ class SerializationSample
 		Student s[] = new Student[n];
 
 		/////
-				FileOutputStream file = new FileOutputStream("StudentObject.txt");
+				FileOutputStream file = new FileOutputStream("StudentObject1.txt");
 				ObjectOutputStream ankita = new ObjectOutputStream(file);
 		/////
 		System.out.print("Enter the data : \n");
-		for(int i=0;i<n;i++)
+		try{
+			for(int i=0;i<n;i++)
+			{
+				s[i] = new Student();
+				System.out.println("\nEnter data for student "+(i+1)+" : ");
+				s[i].setData();
+				ankita.writeObject(s[i]);
+			}
+		}
+		catch(Exception e)
 		{
-			s[i] = new Student();
-			System.out.println("\nEnter data for student "+(i+1)+" : ");
-			s[i].setData();
-			ankita.writeObject(s[i]);
+			System.out.println("Error......");
 		}
 
 		file.close();
