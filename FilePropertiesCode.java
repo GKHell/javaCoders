@@ -12,6 +12,7 @@ class FileProperties{
 		System.out.println("     isFile : "+file.isFile());
 	 	System.out.println("isDirectory : "+file.isDirectory());
 	 	System.out.println("    canRead : "+file.canRead());
+	 	
 		
 	}
 }
