@@ -26,7 +26,7 @@ class ZipFile{
 		int ch;
 		while((ch=file1.read())!=-1)
 		{
-			file2.write((char)ch);
+			kartik.write((char)ch);
 		}
 
 	file1.close();
